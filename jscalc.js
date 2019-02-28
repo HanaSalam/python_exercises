@@ -47,7 +47,7 @@ $(document).ready(function () {
         nums = [];
         nums.push(results.toString());
         if (results % 1 === 0) {
-            $("#result").html(results);
+            $("#result").html(results); //update html. try with this statement only
         } else {
             results = results.toFixed(4);
             $("#result").html(results);
@@ -56,7 +56,7 @@ $(document).ready(function () {
     });
 
 
-    //reset everything
+    //clear everything
     $(".clear").on("click", function () {
         num1 = "";
         nums = [];
@@ -64,5 +64,6 @@ $(document).ready(function () {
         results = "";
         $("#result").html("");
     });
+    //try the same for CE
 
 });
